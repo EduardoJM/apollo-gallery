@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/apollo-gallery/static/js/main.27bbf7d5.chunk.js",
-    "main.js.map": "/apollo-gallery/static/js/main.27bbf7d5.chunk.js.map",
+    "main.js": "/apollo-gallery/static/js/main.be71c530.chunk.js",
+    "main.js.map": "/apollo-gallery/static/js/main.be71c530.chunk.js.map",
     "runtime-main.js": "/apollo-gallery/static/js/runtime-main.d387db5b.js",
     "runtime-main.js.map": "/apollo-gallery/static/js/runtime-main.d387db5b.js.map",
     "static/js/2.13ee099f.chunk.js": "/apollo-gallery/static/js/2.13ee099f.chunk.js",
     "static/js/2.13ee099f.chunk.js.map": "/apollo-gallery/static/js/2.13ee099f.chunk.js.map",
     "index.html": "/apollo-gallery/index.html",
-    "precache-manifest.f772a678189082aa84ef807a594ca442.js": "/apollo-gallery/precache-manifest.f772a678189082aa84ef807a594ca442.js",
+    "precache-manifest.b206c6f17c6dd13a038f5d5bbfebbb7f.js": "/apollo-gallery/precache-manifest.b206c6f17c6dd13a038f5d5bbfebbb7f.js",
     "service-worker.js": "/apollo-gallery/service-worker.js",
     "static/js/2.13ee099f.chunk.js.LICENSE.txt": "/apollo-gallery/static/js/2.13ee099f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.d387db5b.js",
     "static/js/2.13ee099f.chunk.js",
-    "static/js/main.27bbf7d5.chunk.js"
+    "static/js/main.be71c530.chunk.js"
   ]
 }
