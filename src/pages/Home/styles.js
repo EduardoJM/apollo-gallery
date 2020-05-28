@@ -142,6 +142,26 @@ const Container = styled.div`
     }
 
     @media screen and (max-width: 500px) {
+        header {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            > svg {
+                margin: 20px 0;
+            }
+
+            > div {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                
+                h1, h2 {
+                    text-align: center;
+                }
+            }
+        }
+
         .icons-block {
             > .icon {
                 flex: 0 0 100%;
