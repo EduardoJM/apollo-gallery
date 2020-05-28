@@ -69,6 +69,8 @@ export const SocialButton = styled.a`
     justify-content: center;
 
     svg {
+        width: 32px;
+        height: auto;
         max-width: 32px;
         fill: #555;
     }
