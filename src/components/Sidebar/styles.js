@@ -70,7 +70,7 @@ export const SocialButton = styled.a`
 
     svg {
         max-width: 32px;
-        fill: currentColor;
+        fill: #555;
     }
 `;
 
@@ -99,7 +99,7 @@ export const Toggler = styled.button`
     svg {
         width: 32px;
         height: 32px;
-        fill: currentColor;
+        fill: #555;
         transition: ease 0.5s;
     }
 `;
