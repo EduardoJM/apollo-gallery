@@ -64,9 +64,9 @@ export default function GalleryBaseComponent({ identifier, shortIdentifier, vali
                             />
                         ))}
                     </ImageList>
-                    <Pagination current={parseInt(page, 10)} count={total} prefix={`/${shortIdentifier}/${id}/`} />
                 </Container>
             ))}
+            <Pagination current={parseInt(page, 10)} count={total} prefix={`/${shortIdentifier}/${id}/`} />
         </>
     );
 }
