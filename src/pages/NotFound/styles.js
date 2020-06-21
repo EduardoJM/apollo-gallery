@@ -7,9 +7,15 @@ const Container = styled.div`
     align-items: center;
     justify-content: center;
 
-    svg {
+    i.libre {
         width: 256px;
+        height: 256px;
         margin-bottom: 20px;
+
+        svg {
+            width: 256px !important;
+            height: 256px !important;
+        }
     }
 
     h1 {

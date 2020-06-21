@@ -14,9 +14,14 @@ const Container = styled.div`
             color: #555;
             margin-right: 15px;
 
-            svg {
+            i.libre {
                 width: 32px;
-                fill: currentColor;
+                height: 32px;
+
+                svg {
+                    width: 32px !important;
+                    height: 32px !important;
+                }
             }
         }
     }
@@ -47,9 +52,14 @@ const Container = styled.div`
             color: currentColor;
             margin-right: 10px;
 
-            svg {
+            i.libre {
                 width: 32px;
                 height: 32px;
+
+                svg {
+                    width: 32px !important;
+                    height: 32px !important;
+                }
             }
         }
     }

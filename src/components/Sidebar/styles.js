@@ -54,7 +54,8 @@ export const Container = styled.div`
 
         &.social-area {
             flex-direction: row;
-            justify-content: center;
+            flex-wrap: wrap;
+            justify-content: flex-start;
             align-items: center;
         }
     }
@@ -68,11 +69,16 @@ export const SocialButton = styled.a`
     align-items: center;
     justify-content: center;
 
-    svg {
+    i.libre {
         width: 32px;
-        height: auto;
-        max-width: 32px;
-        fill: #555;
+        height: 32px;
+
+        svg {
+            width: 32px !important;
+            height: 32px !important;
+            max-width: 32px;
+            fill: #555;
+        }
     }
 `;
 
@@ -85,6 +91,9 @@ export const Toggler = styled.button`
     background: transparent;
     cursor: pointer;
     color: #555;
+    background: #FFF;
+    padding: 5px;
+    border-radius: 4px;
 
     @media screen and (min-width: 701px) {
         display: none;
@@ -98,10 +107,15 @@ export const Toggler = styled.button`
         }
     `}
 
-    svg {
+    i.libre {
         width: 32px;
         height: 32px;
-        fill: #555;
-        transition: ease 0.5s;
+
+        svg {
+            width: 32px !important;
+            height: 32px !important;
+            fill: #555;
+            transition: ease 0.5s;
+        }
     }
 `;

@@ -55,7 +55,7 @@ export default function ImageViewer({ identifier, shortIdentifier, validIds }) {
         <Container image={data.links ? data.links.standard : ''}>
             <div className="header">
                 <Link to={`/${shortIdentifier}/${id}/${page}`}>
-                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z" /></svg>
+                    <i className="libre" data-icon="arrow-left" />
                 </Link>
                 {data.id && (
                     <span>
@@ -73,7 +73,7 @@ export default function ImageViewer({ identifier, shortIdentifier, validIds }) {
                 )}
                 <span className="fit" />
                 <a href={data.links ? data.links.standard : '#'} target="blank">
-                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="external-link-square-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M448 80v352c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48zm-88 16H248.029c-21.313 0-32.08 25.861-16.971 40.971l31.984 31.987L67.515 364.485c-4.686 4.686-4.686 12.284 0 16.971l31.029 31.029c4.687 4.686 12.285 4.686 16.971 0l195.526-195.526 31.988 31.991C358.058 263.977 384 253.425 384 231.979V120c0-13.255-10.745-24-24-24z" /></svg>
+                    <i className="libre" data-icon="gui-link" />
                 </a>
             </div>
             {data.description && (

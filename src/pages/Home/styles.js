@@ -10,9 +10,15 @@ const Container = styled.div`
         margin-bottom: 100px;
         color: #000;
 
-        > svg {
-            width: 86px;
+        > i.libre {
             margin-right: 20px;
+            width: 86px;
+            height: 86px;
+
+            svg {
+                width: 86px !important;
+                height: 86px !important;
+            }
         }
 
         > div {
@@ -48,9 +54,15 @@ const Container = styled.div`
             align-items: center;
             justify-content: baseline;
 
-            > svg {
+            > i.libre {
+                width: 150px;
                 height: 150px;
                 margin: 20px 0;
+
+                > svg {
+                    width: 150px !important;
+                    height: 150px !important;
+                }
             }
 
             > span {
