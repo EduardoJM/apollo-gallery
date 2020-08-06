@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components';
+import { animated } from 'react-spring';
 
-export const Container = styled.div`
+export const Container = styled(animated.div)`
     width: 200px;
     height: 100vh;
     position: fixed;
@@ -34,14 +35,9 @@ export const Container = styled.div`
     }
 
     @media screen and (max-width: 700px) {
-        display: none;
         width: 300px;
         padding-top: 80px;
         justify-content: flex-start;
-
-        ${(props) => props.mobileVisible && css`
-            display: flex;
-        `}
     }
 
     @media screen and (max-width: 300px) {
@@ -90,11 +86,7 @@ export const Toggler = styled.button`
     padding: 5px;
     border-radius: 4px;
 
-    @media screen and (min-width: 701px) {
-        display: none;
-    }
-
-    ${(props) => props.mobileVisible && css`
+    ${(props) => props.visible && css`
         @media screen and (max-width: 700px) {
             svg {
                 transform: rotate(-90deg);
