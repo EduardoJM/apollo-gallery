@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { MdMenu, MdLink } from 'react-icons/md';
+import { FaInstagram, FaGithub, FaLinkedin } from 'react-icons/fa';
 
-import { Toggler, Container, SocialButton } from './styles';
+import { Toggler, Container } from './styles';
 
 export default function Sidebar() {
     const [toggleState, setToggleState] = useState(false);
@@ -13,7 +15,7 @@ export default function Sidebar() {
     return (
         <>
             <Toggler mobileVisible={toggleState} onClick={handleSidebarToggle}>
-                <i className="libre" data-icon="gui-menu" data-color="true" />
+                <MdMenu />
             </Toggler>
             <Container mobileVisible={toggleState}>
                 <h3>O Site</h3>
@@ -27,24 +29,44 @@ export default function Sidebar() {
                 </div>
                 <h3>Criador</h3>
                 <div className="social-area">
-                    <SocialButton href="https://eduardojm.github.io/" target="blank">
-                        <i className="libre" data-icon="gui-link" />
-                    </SocialButton>
-                    <SocialButton href="https://www.instagram.com/edu.js.o/" target="blank">
-                        <i className="libre" data-icon="social-instagram" />
-                    </SocialButton>
-                    <SocialButton href="https://www.linkedin.com/in/edujso" target="blank">
-                        <i className="libre" data-icon="social-linkedin" />
-                    </SocialButton>
-                    <SocialButton href="https://github.com/eduardojm/" target="blank">
-                        <i className="libre" data-icon="social-github" />
-                    </SocialButton>
+                    <a
+                        className="social"
+                        href="https://eduardojm.github.io/"
+                        target="blank"
+                    >
+                        <MdLink />
+                    </a>
+                    <a
+                        className="social"
+                        href="https://www.instagram.com/edu.js.o/"
+                        target="blank"
+                    >
+                        <FaInstagram />
+                    </a>
+                    <a
+                        className="social"
+                        href="https://www.linkedin.com/in/edujso"
+                        target="blank"
+                    >
+                        <FaLinkedin />
+                    </a>
+                    <a
+                        className="social"
+                        href="https://github.com/eduardojm/"
+                        target="blank"
+                    >
+                        <FaGithub />
+                    </a>
                 </div>
                 <h3>Código-Fonte</h3>
                 <div className="social-area">
-                    <SocialButton href="https://github.com/EduardoJM/apollo-gallery" target="blank">
-                        <i className="libre" data-icon="social-github" />
-                    </SocialButton>
+                    <a
+                        className="social"
+                        href="https://github.com/EduardoJM/apollo-gallery"
+                        target="blank"
+                    >
+                        <FaGithub />
+                    </a>
                 </div>
             </Container>
         </>

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Redirect, Link, useParams } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import { FaExternalLinkAlt, FaAngleLeft } from 'react-icons/fa';
 
 import Container from './style';
 
@@ -55,7 +56,7 @@ export default function ImageViewer({ identifier, shortIdentifier, validIds }) {
         <Container image={data.links ? data.links.standard : ''}>
             <div className="header">
                 <Link to={`/${shortIdentifier}/${id}/${page}`}>
-                    <i className="libre" data-icon="arrow-left" />
+                    <FaAngleLeft />
                 </Link>
                 {data.id && (
                     <span>
@@ -73,7 +74,7 @@ export default function ImageViewer({ identifier, shortIdentifier, validIds }) {
                 )}
                 <span className="fit" />
                 <a href={data.links ? data.links.standard : '#'} target="blank">
-                    <i className="libre" data-icon="gui-link" />
+                    <FaExternalLinkAlt />
                 </a>
             </div>
             {data.description && (

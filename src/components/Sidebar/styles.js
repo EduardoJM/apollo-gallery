@@ -17,6 +17,22 @@ export const Container = styled.div`
 
     z-index: 50;
 
+    a.social {
+        width: 42px;
+        height: 42px;
+        margin: 0 5px !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+            width: 32px;
+            height: 32px;
+            max-width: 32px;
+            fill: #555;
+        }
+    }
+
     @media screen and (max-width: 700px) {
         display: none;
         width: 300px;
@@ -61,27 +77,6 @@ export const Container = styled.div`
     }
 `;
 
-export const SocialButton = styled.a`
-    width: 42px;
-    height: 42px;
-    margin: 0 5px !important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    i.libre {
-        width: 32px;
-        height: 32px;
-
-        svg {
-            width: 32px !important;
-            height: 32px !important;
-            max-width: 32px;
-            fill: #555;
-        }
-    }
-`;
-
 export const Toggler = styled.button`
     position: fixed;
     left: 10px;
@@ -107,15 +102,10 @@ export const Toggler = styled.button`
         }
     `}
 
-    i.libre {
+    svg {
         width: 32px;
         height: 32px;
-
-        svg {
-            width: 32px !important;
-            height: 32px !important;
-            fill: #555;
-            transition: ease 0.5s;
-        }
+        fill: #555;
+        transition: ease 0.5s;
     }
 `;

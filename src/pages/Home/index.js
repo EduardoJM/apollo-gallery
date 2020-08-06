@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FaRocket, FaRegImages, FaSatellite, FaMobileAlt } from 'react-icons/fa';
 
 import Container from './styles';
 
@@ -9,7 +10,7 @@ export default function Home() {
     return (
         <Container>
             <header>
-                <i className="libre" data-icon="weather-moon-waxing-crescent-2" />
+                <FaRocket />
                 <div>
                     <h1>Galeria de Imagens</h1>
                     <h2>Missão Apollo</h2>
@@ -49,19 +50,19 @@ export default function Home() {
             </div>
             <div className="icons-block">
                 <div className="icon">
-                    <i className="libre" data-icon="gui-gallery" />
+                    <FaRegImages />
                     <span>
                         Galerias ordenadas por programa, missão e rolos de câmeras disponíveis.
                     </span>
                 </div>
                 <div className="icon">
-                    <i className="libre" data-icon="brand-nasa" />
+                    <FaSatellite />
                     <span>
                         Imagens carregadas diretamente do site da NASA.
                     </span>
                 </div>
                 <div className="icon">
-                    <i className="libre" data-icon="tech-mobile" />
+                    <FaMobileAlt />
                     <span>
                         Interface ajustada para visualização em smartphones.
                     </span>
