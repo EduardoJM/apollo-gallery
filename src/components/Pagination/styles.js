@@ -7,6 +7,8 @@ const Container = styled.div`
     align-items: center;
     justify-content: center;
     padding: 10px;
+
+    margin-bottom: 30px;
     
     > div {
         > a, > span {
