@@ -20,12 +20,16 @@ export default function Pagination({ current, count, prefix }) {
         setPages(data);
     }, [current, count, prefix]);
 
+    function handlePaginationItemClick() {
+        window.scrollTo(0, 0);
+    }
+
     return (
         <Container>
             {pages.map((p) => (
                 <div key={p.page}>
                     {!p.isCurrent && (
-                        <Link to={p.url}>{p.page}</Link>
+                        <Link onClick={handlePaginationItemClick} to={p.url}>{p.page}</Link>
                     )}
                     {p.isCurrent && (
                         <span>{p.page}</span>
