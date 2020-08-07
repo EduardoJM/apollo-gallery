@@ -5,7 +5,6 @@ import Home from './pages/Home';
 import NotFound from './pages/NotFound';
 import GalleriesList from './pages/GalleriesList';
 import Gallery from './pages/Gallery';
-import MagazineList from './pages/MagazineList';
 
 export default function Routes() {
     return (
@@ -14,7 +13,7 @@ export default function Routes() {
                 <Home />
             </Route>
             <Route path="/g" exact>
-                <GalleriesList />
+                <GalleriesList identifier="g" />
             </Route>
             <Route path="/g/:id" exact>
                 <Gallery identifier="g" />
@@ -26,7 +25,7 @@ export default function Routes() {
                 <Gallery identifier="g" />
             </Route>
             <Route path="/m" exact>
-                <MagazineList />
+                <GalleriesList identifier="m" />
             </Route>
             <Route path="/m/:id" exact>
                 <Gallery identifier="m" />
