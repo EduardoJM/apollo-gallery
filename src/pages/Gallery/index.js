@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams, useHistory, Link } from 'react-router-dom';
+import { useParams, Link, Redirect } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { useTransition } from 'react-spring';
 import { MdClose, MdLink } from 'react-icons/md';
@@ -11,7 +11,6 @@ import { Container, ImageList, ModalOverlay } from './styles';
 
 export default function Gallery({ identifier }) {
     const { id, page: initialPage, photo: photoId } = useParams();
-    const history = useHistory();
     const [total, setTotal] = useState(0);
     const [invalidPage, setInvalidPage] = useState(false);
     const [images, setImages] = useState([]);
@@ -21,27 +20,10 @@ export default function Gallery({ identifier }) {
         enter: { opacity: 1 },
         leave: { opacity: 0 },
     });
-
-    if (identifier !== 'g' && identifier !== 'm') {
-        // gallery or magazine
-        history.push('/');
-    }
-    if (!id) {
-        // required
-        history.push(`/${identifier}`);
-    }
-    if (identifier === 'm') {
-        if (!validMagazines.includes(id)) {
-            history.push(`/${identifier}`);
-        }
-    } else if (!validGalleries.includes(id)) {
-        history.push(`/${identifier}`);
-    }
     let page = initialPage;
     if (!page) {
         page = 1;
     }
-    const completeIdentifier = identifier === 'm' ? 'magazines' : 'galleries';
 
     useEffect(() => {
         if (total <= 0) {
@@ -49,6 +31,7 @@ export default function Gallery({ identifier }) {
         }
 
         async function loadImages() {
+            const completeIdentifier = identifier === 'm' ? 'magazines' : 'galleries';
             const response = await fetch(`https://cdn.jsdelivr.net/gh/eduardojm/apollo-gallery-scrap@v1.0.3/storage/${completeIdentifier}/${id}/${page}.json`);
             const data = await response.json();
             setImages(data);
@@ -59,6 +42,7 @@ export default function Gallery({ identifier }) {
 
     useEffect(() => {
         async function loadPagination() {
+            const completeIdentifier = identifier === 'm' ? 'magazines' : 'galleries';
             const response = await fetch(`https://cdn.jsdelivr.net/gh/eduardojm/apollo-gallery-scrap@v1.0.3/storage/${completeIdentifier}/${id}/pagination.json`);
             const { count } = await response.json();
             if (page > count) {
@@ -70,12 +54,6 @@ export default function Gallery({ identifier }) {
 
         loadPagination();
     }, [id, page, identifier]);
-
-    useEffect(() => {
-        if (invalidPage) {
-            history.push(`/${identifier}/${id}`);
-        }
-    }, [invalidPage]);
 
     useEffect(() => {
         const filtered1 = images.filter((gallery) => {
@@ -93,6 +71,23 @@ export default function Gallery({ identifier }) {
         }
         setPhotoData(filtered2[0]);
     }, [photoId, images]);
+
+    if (invalidPage) {
+        return <Redirect to={`/${identifier}/${id}`} />;
+    }
+    if (identifier !== 'g' && identifier !== 'm') {
+        return <Redirect to="/" />;
+    }
+    if (!id) {
+        return <Redirect to={`/${identifier}`} />;
+    }
+    if (identifier === 'm') {
+        if (!validMagazines.includes(id)) {
+            return <Redirect to={`/${identifier}`} />;
+        }
+    } else if (!validGalleries.includes(id)) {
+        return <Redirect to={`/${identifier}`} />;
+    }
 
     return (
         <>

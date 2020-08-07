@@ -6,10 +6,6 @@ import NotFound from './pages/NotFound';
 import GalleriesList from './pages/GalleriesList';
 import Gallery from './pages/Gallery';
 import MagazineList from './pages/MagazineList';
-import Magazine from './pages/Magazine';
-import ImageViewer from './pages/ImageViewer';
-
-import { validMagazines, validGalleries } from './utils';
 
 export default function Routes() {
     return (
@@ -33,13 +29,13 @@ export default function Routes() {
                 <MagazineList />
             </Route>
             <Route path="/m/:id" exact>
-                <Magazine />
+                <Gallery identifier="m" />
             </Route>
             <Route path="/m/:id/:page" exact>
-                <Magazine />
+                <Gallery identifier="m" />
             </Route>
             <Route path="/m/:id/:page/:photo" exact>
-                <ImageViewer identifier="magazines" shortIdentifier="m" validIds={validMagazines} />
+                <Gallery identifier="m" />
             </Route>
             <Route>
                 <NotFound />
