@@ -4,7 +4,6 @@ import { HashRouter } from 'react-router-dom';
 import GlobalStyle from './styles/global';
 import AppContainer from './styles/app';
 import Sidebar from './components/Sidebar';
-import ScrollToTop from './components/ScrollToTop';
 
 import Routes from './routes';
 
@@ -13,12 +12,10 @@ function App() {
         <>
             <AppContainer>
                 <HashRouter>
-                    <ScrollToTop>
-                        <Sidebar />
-                        <div className="content">
-                            <Routes />
-                        </div>
-                    </ScrollToTop>
+                    <Sidebar />
+                    <div className="content">
+                        <Routes />
+                    </div>
                 </HashRouter>
             </AppContainer>
             <GlobalStyle />

@@ -21,13 +21,13 @@ export default function Routes() {
                 <GalleriesList />
             </Route>
             <Route path="/g/:id" exact>
-                <Gallery />
+                <Gallery identifier="g" />
             </Route>
             <Route path="/g/:id/:page" exact>
-                <Gallery />
+                <Gallery identifier="g" />
             </Route>
             <Route path="/g/:id/:page/:photo" exact>
-                <ImageViewer identifier="galleries" shortIdentifier="g" validIds={validGalleries} />
+                <Gallery identifier="g" />
             </Route>
             <Route path="/m" exact>
                 <MagazineList />
