@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/apollo-gallery/static/js/main.a3bc06aa.chunk.js",
-    "main.js.map": "/apollo-gallery/static/js/main.a3bc06aa.chunk.js.map",
-    "runtime-main.js": "/apollo-gallery/static/js/runtime-main.d387db5b.js",
-    "runtime-main.js.map": "/apollo-gallery/static/js/runtime-main.d387db5b.js.map",
-    "static/js/2.13ee099f.chunk.js": "/apollo-gallery/static/js/2.13ee099f.chunk.js",
-    "static/js/2.13ee099f.chunk.js.map": "/apollo-gallery/static/js/2.13ee099f.chunk.js.map",
+    "main.js": "/apollo-gallery/static/js/main.bca67be6.chunk.js",
+    "main.js.map": "/apollo-gallery/static/js/main.bca67be6.chunk.js.map",
+    "runtime-main.js": "/apollo-gallery/static/js/runtime-main.df8e7b36.js",
+    "runtime-main.js.map": "/apollo-gallery/static/js/runtime-main.df8e7b36.js.map",
+    "static/js/2.cd9971ff.chunk.js": "/apollo-gallery/static/js/2.cd9971ff.chunk.js",
+    "static/js/2.cd9971ff.chunk.js.map": "/apollo-gallery/static/js/2.cd9971ff.chunk.js.map",
     "index.html": "/apollo-gallery/index.html",
-    "precache-manifest.7b1bcedd4e236b9389c4d9383e9567b0.js": "/apollo-gallery/precache-manifest.7b1bcedd4e236b9389c4d9383e9567b0.js",
+    "precache-manifest.dda7c0f2cc752d487fe64b1fa1071a78.js": "/apollo-gallery/precache-manifest.dda7c0f2cc752d487fe64b1fa1071a78.js",
     "service-worker.js": "/apollo-gallery/service-worker.js",
-    "static/js/2.13ee099f.chunk.js.LICENSE.txt": "/apollo-gallery/static/js/2.13ee099f.chunk.js.LICENSE.txt"
+    "static/js/2.cd9971ff.chunk.js.LICENSE.txt": "/apollo-gallery/static/js/2.cd9971ff.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.d387db5b.js",
-    "static/js/2.13ee099f.chunk.js",
-    "static/js/main.a3bc06aa.chunk.js"
+    "static/js/runtime-main.df8e7b36.js",
+    "static/js/2.cd9971ff.chunk.js",
+    "static/js/main.bca67be6.chunk.js"
   ]
 }
