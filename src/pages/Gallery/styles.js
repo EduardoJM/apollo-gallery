@@ -36,6 +36,16 @@ export const ModalOverlay = styled(animated.div)`
     align-items: center;
     justify-content: center;
 
+    @media (max-width: 900px) {
+        padding: 10px !important;
+    }
+
+    @media (max-width: 700px) {
+        .content {
+            flex-direction: column;
+        }
+    }
+
     .content {
         background: #FFF;
 
