@@ -1,66 +1,75 @@
 # Apollo Image Gallery
 
 <h2 align="center">
-    <img src=".github/images/preview.jpg" alt="previa do site" />
+    <img src=".github/preview.jpg" alt="previa do site" />
 </h2>
 
 <h3 align="center">
     <a target="blank" href="https://eduardojm.github.io/apollo-gallery/#/">Acessar Online</a>
 </h3>
 
-## :bulb: Sobre
+## :bulb: About
 
-Esse projeto foi criado objetivando facilitar a visualização das imagens do programa Apollo, disponíveis no site [Apollo Archive](http://www.apolloarchive.com/apollo_gallery.html). Esse projeto é, na verdade, uma recriação utilizando **ReactJS**, pois o meu projeto original (antigo) utilizava scripts mal feitos e carregava todos os arquivos JSON das galerias.
+This project was created to get a modern view of the photos from the NASA Apollo program from the page [Apollo Archive](http://www.apolloarchive.com/apollo_gallery.html). This project is developed with **React.JS** and the **styled-components** and is an modern version of a old site created by me.
 
-São duas partes do projeto, sendo a primeira delas o de raspar os dados do site. Esse processo de raspagem não é feito de forma completamente automática e, as partes automáticas são escritas em Python e estão disponíveis no repositório [apollo-gallery-scrap](https://github.com/EduardoJM/apollo-gallery-scrap), junto com os arquivos json gerados (arquivos esses que são carregados nessa aplicação).
+This load the photos "database" from a scrapper disponible in the repository [apollo-gallery-scrap](https://github.com/EduardoJM/apollo-gallery-scrap), like a false API. The scrap method is not complete automatized for now and need some rewrites.
 
-A segunda parte, consiste nessa interface, desenvolvida utilizando o **ReactJS** e o **styled-components**.
+## :gear: Technologies
 
-## :gear: Tecnologias
+- **JavaScript** / **ReactJS**
+- **CSS** (com **styled-components**)
 
-- JavaScript / ReactJS
-- CSS (com *styled-components*)
-
-## :hammer: Ferramentas
+## :hammer: Tools
 
 - [Visual Studio Code](https://code.visualstudio.com/download)
 
-## :book: Coisas Aprendidas
+## :computer: Running
 
-Algumas das principais coisas aprendidas nesse projeto foram:
+A version of the project is disponible online, [click here](https://eduardojm.github.io/apollo-gallery/#/), supported by the **github-pages**. But, if you want to run the project locally in your machine, follow the steps:
 
-- Melhor aprimoramento nos conceitos do `useEffect` e do `useState`.
-
-- Utilizar o `fetch` e funções assíncronas para o carregamento dos dados (providos pelo [jsDelivr](https://www.jsdelivr.com/) a partir do repositório do GitHub já citado acima).
-
-## :computer: Executando o projeto
-
-Uma versão do projeto está disponível online, [clicando aqui](https://eduardojm.github.io/apollo-gallery/#/). Porém, caso você queira executar o projeto localmente, na sua máquina, basta seguir os seguintes passos.
-
-### 1 - Clonar o repositório
+### Clone the repository
 
 ```bash
 git clone https://github.com/EduardoJM/apollo-gallery.git
 ```
 
-### 2 - Instalar as dependências
+### Install the dependencies
 
 ```bash
 cd apollo-gallery
 npm install
 ```
 
-### 3 - Executar o servidor de desenvolvimento
+or
+
+```bash
+cd apollo-gallery
+yarn
+```
+
+### Run the development server
 
 ```bash
 npm start
 ```
 
-## :pencil: Planos para o futuro
+or 
 
-- Corrigir os arquivos raspados (estão em outro repositório), pois alguns links (não utilizados nesse projeto) estão com diferenças de maiúscula e minúscula.
+```bash
+yarn start
+```
 
-- Traduzir os arquivos raspados e, ao longo do tempo, corrigir e adicionar informações.
+### Build the production
+
+```bash
+npm run build
+```
+
+or 
+
+```bash
+yarn build
+```
 
 ## :nerd_face: Author
 
