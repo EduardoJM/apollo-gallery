@@ -5,7 +5,7 @@
 </h2>
 
 <h3 align="center">
-    <a target="blank" href="https://eduardojm.github.io/apollo-gallery/#/">Acessar Online</a>
+    <a target="blank" href="https://eduardojm.github.io/apollo-gallery/#/">View Online</a>
 </h3>
 
 ## :bulb: About
