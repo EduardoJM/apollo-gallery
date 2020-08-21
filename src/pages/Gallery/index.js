@@ -147,6 +147,7 @@ export default function Gallery({ identifier }) {
                                 {item.links && (
                                     <a href={item.links.standard} target="_blank" rel="noreferrer">
                                         <MdLink />
+                                        Abrir Link
                                     </a>
                                 )}
                             </div>

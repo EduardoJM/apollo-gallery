@@ -88,6 +88,17 @@ export const ModalOverlay = styled(animated.div)`
             .fit {
                 flex: 1;
             }
+
+            .buttons a {
+                display: flex;
+                align-items: center;
+                color: #222;
+                text-decoration: none;
+
+                svg {
+                    margin-right: 5px;
+                }
+            }
         }
     }
 
